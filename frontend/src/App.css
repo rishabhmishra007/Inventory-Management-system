@@ -1,0 +1,89 @@
+/* Sidebar Styling */
+.sidebar {
+  height: 100vh; /* Full height */
+  position: fixed;
+  background-color: #343a40;
+  width: 220px; /* Fixed sidebar width */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keeps sidebar on top */
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  width: calc(100% - 198px); /* Ensure width adjusts based on sidebar width */
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 198px; /* Offset to accommodate sidebar width */
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+/* Content Area */
+.content {
+  margin-left: 220px; /* Offset for the sidebar */
+  padding-top: 80px;  /* Offset for the navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* App.css */
+
+/* Background color for Cards */
+.custom-card {
+  background-color: #3dc0f8; /* Light grey background */
+  border: 1px solid #dee2e6; /* Light border */
+}
+
+/* Background color for Table */
+.custom-table {
+  background-color: #c933f7; /* White background */
+  border: 1px solid #dee2e6; /* Light border */
+}
+
+/* Table header styling */
+.custom-table thead th {
+  background-color: #3dc0f8; /* Light grey header */
+  color: #495057; /* Dark grey text */
+}
+
+/* Background color for Charts */
+.chart-container {
+  background-color: hsl(60, 61%, 94%); /* Very light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+}
+
+@media (min-width: 768px) {
+  .offset-md-2 {
+      margin-left: 10.66666667%;
+  }
+}
